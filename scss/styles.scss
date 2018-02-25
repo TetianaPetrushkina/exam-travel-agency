@@ -1,0 +1,92 @@
+@import '_normalize';
+@import '_mixins';
+@import '_vars';
+
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,700');
+@font-face {
+	font-family: Aleo;
+	src: url(../fonts/aleo-regular-webfont.eot); 
+	src: url(../fonts/aleo-regular-webfont.ttf) format("ttf"),
+		url(../fonts/aleo-regular-webfont.woff) format("woff");
+}
+
+*, html {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	transition: all .25s;
+}
+
+body {
+	font: $text-font;
+	color: #fff;
+}
+
+.header {
+	height: 756px;
+	background: url(../img/bg-header.jpg) center no-repeat #04589f;
+	background-size: cover;
+	text-align: center;
+	&__title {
+		font: 700 48 'Josefin+Sans', Arial, sans-serif;
+		text-transform: uppercase;
+		letter-spacing: 4px;
+		padding: 250px 0 10px;
+		margin: 0;
+	}
+	&__text {
+		font: 400 22 'Josefin+Sans', Arial, sans-serif;
+		letter-spacing: 3px;
+	}
+	& input {
+		height: 60px;
+		width: 650px;
+		letter-spacing: 3px;
+		font-size: 14px;
+		text-align: center;
+	}
+}
+
+.search-icon {
+	width: 147px;
+	height: 60px;
+	background-color: #5474fd;
+	border: 2px solid #fff;
+}
+
+.container {
+	width: 1110px;
+	margin: 0 auto;
+	padding-left: 345px;
+	padding-right: 345px;
+	display: flex;
+	flex-direction: row;
+}
+
+.grid-row {
+
+}
+
+.navbar {
+	height: 75px;
+	background-color: #5474fd;
+	text-transform: uppercase;
+	&__logo {
+		font: 700 24 'Josefin+Sans', Arial, sans-serif;
+		text-transform: uppercase;
+		display: inline-block;
+	}
+	&__menu {
+
+	}
+	& li {
+		display: inline-block;
+	}
+	& a {
+		text-decoration: none;
+		font: $title-font;
+		font-size: 14px;
+		color: #fff;
+	}
+}
+
